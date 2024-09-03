@@ -2,9 +2,16 @@ header{
     text-align: center;
 }
 body{
+    width: auto;
     margin: 1rem;
     background-color: azure;
     font-size: 18px;
+}
+.seccion{
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    padding: 1.5rem 10px;
+    margin: 1rem;
 }
 .divisor{
     border: solid 1px rgba(95, 95, 95, 1);
@@ -48,16 +55,16 @@ blockquote{
     background-color:rgb(145, 145, 245);
     box-shadow: 2px 2px 10px 1px black;
     padding: 2px;
+    margin: 0 0 1rem 0;
 }
 .relativo{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 98%;
     height: 4rem;
     position: relative;
     border-radius: 6px;
-    margin-top: 1rem;
     border: solid 1px black;
     background-color: rgb(145, 241, 243);
 }
@@ -66,11 +73,11 @@ blockquote{
     justify-content: center;
     align-items: center;  /* Primeras tres lineas utilizadas para centrar los textos en medio tanto vertical como horizontalmente */
     position: absolute;
-    width: 20rem;
-    height: 2rem;
+    width: 30%;
+    height: 2.5rem;
     border-radius: 6px;
-    bottom: 75%;
-    left: 70%;
+    top: 65%;
+    left: 65%;
     border: solid 1px black;
     box-shadow: 2px 2px 10px 1px black;
     background-color: aquamarine;
@@ -84,6 +91,10 @@ blockquote{
         background-color: antiquewhite;
         font-size: 14px;
     }
+    .seccion{
+        padding: 1.5rem 10px;
+        margin: 10px 2px;
+    }
     h1{
         font-size: 20px;
     }
@@ -96,8 +107,8 @@ blockquote{
 .grid-container{
     display: grid;
     padding: 10px;
-    width: 95vw;
-    height: 3.5vh;
+    width: auto;
+    height: auto;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
     justify-items: center;
@@ -131,7 +142,7 @@ blockquote{
     width: 200px;
     height: 200px;
     border-radius: 200px;
-    background-color: aquamarine;
+    background-color: rgb(50, 184, 139);
     animation: mover 4s infinite;
 }
 
